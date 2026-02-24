@@ -21,6 +21,7 @@ while True:
             palavra_formada += '*'
 
     print(palavra_formada)
+    print(f'{letra_digitada} está na palavra secreta' if letra_digitada in palavra_secreta else f'{letra_digitada} não está na palavra secreta.')
 
     if palavra_formada == palavra_secreta:
         print(f'Parabéns, você ganhou! A palavra era {palavra_secreta}.')
